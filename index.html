@@ -8,9 +8,30 @@
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet" />
     <!-- Your custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div id="calendar"></div>
+    <div class="container">
+        <header>
+            <h1>My Interactive Calendar</h1>
+        </header>
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#calendar">Calendar</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <div id="calendar"></div>
+        </main>
+        <footer>
+            <p>&copy; 2024 My Calendar App</p>
+        </footer>
+    </div>
     <!-- FullCalendar JS -->
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
     <!-- Your custom JS -->
