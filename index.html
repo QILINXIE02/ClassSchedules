@@ -26,10 +26,22 @@
             </nav>
         </aside>
         <main>
-            <div id="calendar"></div>
+            <div id="calendar-section" class="active">
+                <div id="calendar"></div>
+            </div>
+            <div id="events-section" class="hidden">
+                <h2>Events</h2>
+                <ul id="event-list">
+                    <!-- Event items will be populated here -->
+                </ul>
+            </div>
+            <div id="settings-section" class="hidden">
+                <h2>Settings</h2>
+                <p>Settings will be available here.</p>
+            </div>
         </main>
         <footer>
-            <p>&copy; 2024 My Calendar App</p>
+            <p>&copy; 2024 Qilin's Calendar App</p>
         </footer>
     </div>
     <!-- FullCalendar JS -->

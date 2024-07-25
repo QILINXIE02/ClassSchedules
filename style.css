@@ -34,6 +34,7 @@ header {
   background-color: #f8f9fa;
   padding: 20px;
   width: 200px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar nav ul {
@@ -68,6 +69,22 @@ footer {
   text-align: center;
   padding: 10px;
   font-size: 0.9rem;
+}
+
+#calendar-section,
+#events-section,
+#settings-section {
+  display: none; /* Hide all sections initially */
+}
+
+#calendar-section.active,
+#events-section.active,
+#settings-section.active {
+  display: block; /* Only show the active section */
+}
+
+.hidden {
+  display: none;
 }
 
 #calendar {
